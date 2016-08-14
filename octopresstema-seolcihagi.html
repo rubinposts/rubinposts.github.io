@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mohitto &mdash; Rubin</title>
+  <title>Octopress테마 설치하기 &mdash; Rubin</title>
   <meta name="author" content="Rubin">
 
 
@@ -43,13 +43,13 @@
       <li >
         <a href="https://rubinposts.github.io/category/code.html">Code</a>
       </li>
-      <li class="active">
+      <li >
         <a href="https://rubinposts.github.io/category/food.html">Food</a>
       </li>
       <li >
         <a href="https://rubinposts.github.io/category/life.html">Life</a>
       </li>
-      <li >
+      <li class="active">
         <a href="https://rubinposts.github.io/category/pelican.html">Pelican</a>
       </li>
       <li >
@@ -61,12 +61,25 @@
 <div>
   <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">Mohitto</h1>
+      <h1 class="entry-title">Octopress테마 설치하기</h1>
     <p class="meta">
-<time datetime="2016-08-12T09:10:00+09:00" pubdate>금 12 8월 2016</time>    </p>
+<time datetime="2016-08-15T12:30:00+09:00" pubdate>월 15 8월 2016</time>    </p>
 </header>
 
-  <div class="entry-content"><p><img alt="Photo" src="https://rubinposts.github.io/mohitto.jpg" /></p></div>
+  <div class="entry-content"><p>막상 펠리칸으로 블로그를 설치하고 봤는데 펠리칸으로 블로그를 구축한 점은 매우 감격스러웠으나 이 테마는 사용을 못할거 같았다.. 테마를 변경할 방법이 있나 알아본결과 펠리칸이 상당히 많은 수의 테마를 보유하고 있음을 알수 있었다!
+* <a href="https://github.com/getpelican/pelican-themes">Pelican Theme</a>
+여러가지 눈팅을 해본결과 Octopress가 제일 마음에 들었고 설치하기로 마음먹었다.
+먼저 Octopress테마를 다운 받아서 아래의 폴더에 넣어준다.</p>
+<div class="highlight"><pre><span></span>../pelicanenv/lib/python2.7/site-packages/pelican/themes/octopress/
+</pre></div>
+
+
+<p>다음에 아래의 문장을 pelicanconf.py에 넣어준다.</p>
+<div class="highlight"><pre><span></span><span class="nv">THEME</span> <span class="o">=</span> <span class="s2">&quot;/Users/rubin/python/blog/pelicanenv/lib/python2.7/site-packages/pelican/themes/octopress&quot;</span>
+</pre></div>
+
+
+<p>이게 다였나.. 기억이 가물가물.. 참 쉽죠..?</p></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -74,8 +87,8 @@
         Rubin
     </span>
   </span>
-<time datetime="2016-08-12T09:10:00+09:00" pubdate>금 12 8월 2016</time>  <span class="categories">
-    <a class='category' href='https://rubinposts.github.io/category/food.html'>Food</a>
+<time datetime="2016-08-15T12:30:00+09:00" pubdate>월 15 8월 2016</time>  <span class="categories">
+    <a class='category' href='https://rubinposts.github.io/category/pelican.html'>Pelican</a>
   </span>
 </p><div class="sharing">
 </div>    </footer>
@@ -153,9 +166,9 @@
   <script src="https://rubinposts.github.io/theme/js/octopress.js" type="text/javascript"></script>
   <script type="text/javascript">
     var disqus_shortname = 'rubinposts-github-io';
-    var disqus_identifier = '/mohitto.html';
-    var disqus_url = 'https://rubinposts.github.io/mohitto.html';
-    var disqus_title = 'Mohitto';
+    var disqus_identifier = '/octopresstema-seolcihagi.html';
+    var disqus_url = 'https://rubinposts.github.io/octopresstema-seolcihagi.html';
+    var disqus_title = 'Octopress테마 설치하기';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "https://" + disqus_shortname + '.disqus.com/embed.js';
