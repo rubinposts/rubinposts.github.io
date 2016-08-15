@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/all.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2016-08-15T12:30:00+09:00</updated><entry><title>Octopress테마 설치하기</title><link href="https://rubinposts.github.io/octopresstema-seolcihagi.html" rel="alternate"></link><published>2016-08-15T12:30:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2016-08-15:octopresstema-seolcihagi.html</id><summary type="html">&lt;p&gt;막상 펠리칸으로 블로그를 설치하고 봤는데 펠리칸으로 블로그를 구축한 점은 매우 감격스러웠으나 이 테마는 사용을 못할거 같았다.. 테마를 변경할 방법이 있나 알아본결과 펠리칸이 상당히 많은 수의 테마를 보유하고 있음을 알수 있었다!
-* &lt;a href="https://github.com/getpelican/pelican-themes"&gt;Pelican Theme&lt;/a&gt;
-여러가지 눈팅을 해본결과 Octopress가 제일 마음에 들었고 설치하기로 마음먹었다.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/all.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2016-08-15T12:30:00+09:00</updated><entry><title>Octopress테마 설치하기</title><link href="https://rubinposts.github.io/octopresstema-seolcihagi.html" rel="alternate"></link><published>2016-08-15T12:30:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2016-08-15:octopresstema-seolcihagi.html</id><summary type="html">&lt;p&gt;막상 펠리칸으로 블로그를 설치하고 봤는데 펠리칸으로 블로그를 구축한 점은 매우 감격스러웠으나 이 테마는 사용을 못할거 같았다.. 테마를 변경할 방법이 있나 알아본결과 펠리칸이 상당히 많은 수의 테마를 보유하고 있음을 알수 있었다!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/getpelican/pelican-themes"&gt;Pelican Theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;여러가지 눈팅을 해본결과 Octopress가 제일 마음에 들었고 설치하기로 마음먹었다.
 먼저 Octopress테마를 다운 받아서 아래의 폴더에 넣어준다.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;../pelicanenv/lib/python2.7/site-packages/pelican/themes/octopress/
 &lt;/pre&gt;&lt;/div&gt;
@@ -55,7 +57,8 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;isAwesome&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
   &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>Code Test</title><link href="https://rubinposts.github.io/code-test.html" rel="alternate"></link><published>2010-12-03T10:20:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2010-12-03:code-test.html</id><summary type="html">&lt;p&gt;There are many different ways to style code with GitHub's markdown. If you have inline code blocks, wrap them in backticks: &lt;code&gt;var example = true&lt;/code&gt;.  If you've got a longer block of code, you can indent with four spaces:&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>Comparison of Sorting Algorithm</title><link href="https://rubinposts.github.io/comparison-of-sorting-algorithm.html" rel="alternate"></link><published>2015-08-15T09:41:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2015-08-15:comparison-of-sorting-algorithm.html</id><summary type="html">&lt;h3&gt;Awesome!&lt;/h3&gt;
+&lt;p&gt;&lt;iframe  title="Sort" width="480" height="390" src="http://www.youtube.com/watch?v=ZZuD6iUe3Pc?autoplay=1" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</summary></entry><entry><title>Code Test</title><link href="https://rubinposts.github.io/code-test.html" rel="alternate"></link><published>2010-12-03T10:20:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2010-12-03:code-test.html</id><summary type="html">&lt;p&gt;There are many different ways to style code with GitHub's markdown. If you have inline code blocks, wrap them in backticks: &lt;code&gt;var example = true&lt;/code&gt;.  If you've got a longer block of code, you can indent with four spaces:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if (isAwesome){
   return true
 }
