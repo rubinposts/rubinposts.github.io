@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/challenge.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2016-08-20T10:22:00+09:00</updated><entry><title>HackerEarth의 WalmartLabs에 도전</title><link href="https://rubinposts.github.io/hackerearthyi-walmartlabse-dojeon.html" rel="alternate"></link><published>2016-08-20T10:22:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2016-08-20:hackerearthyi-walmartlabse-dojeon.html</id><summary type="html">&lt;h3&gt;HackerEarth&lt;/h3&gt;
+&lt;p&gt;웹서핑을 하던 도중 들어가게 되었다&lt;/p&gt;
+&lt;h3&gt;WalmartLabs&lt;/h3&gt;
+&lt;p&gt;마침 HackerEarth의 도전 목록에 WalmartLabs것이 있어서 도전하게 되었다. 이 도전이 잘 될것이란 생각은 없었고 그저 문제 하나 풀어보자라는 마음으로 시작하게 되었다&lt;/p&gt;
+&lt;h3&gt;Cafe&lt;/h3&gt;
+&lt;p&gt;무더워 죽겠는 여름에 시원한 카페에서 커피한잔 마시면서 컴퓨터를 하고 있었으므로 이곳에서 도전하게 되었는데 문제는 인터넷.. ㅠㅠ 카페의 와이파이를 잡아서 문제를 풀고 있는데 잦은 Disconnection 및 Reconnection이 발생하여 에러를 유발하였는데 특히 Code Autosaving Error.. Compile에러등 종류도 다양하게 나서 계속 시간을 잡아먹고 브라우저를 껐다 켜기도 하였다..&lt;/p&gt;
+&lt;h3&gt;Challenge&lt;/h3&gt;
+&lt;p&gt;문제는 Queue 및 BinarySearch환경에서 Optimal Time과 그 Path를 알아내는 문제였는데 코딩은 많이 해보았다고 생각하는데 BinarySearch에 대해 진지하게 고민한 적이 없어서 3시간 주어진 도전장소에서 진지한 고민을 하였다.. 허허.. 문제는 BinaryTree를 구성하는 것이 아니라 주어진 BinaryTree의 각각의 Branch에 대기열헤 해당하는 Queue가 존재하고 Root에서 단 한명만 빠져나갈수 있으며 각 Junction(Branch가 만나는 지점)에 누군가가 있어 한번은 Left, 한번은 Right에서 큐를 상위 Branch로 올려보낸다는 그런 내용이었다. Root단에서 한명이 빠져나가려면 Root Junction을 이루고 있는 두개의 Branch중에 한곳에서 사람이 빠져나가야하고 빠져나간 Branch에 연결된 다른쪽 Junction이 있다면 빠져나가진 Branch에 올려보낼 다음 사람을 역시 그 Junction의 2개나 혹은 1개의 브랜치에서 올려보내고... 문제는 BinaryTree는 이미 구성되어 있으므로 어느 대기열에 들어가야 최적의 타임이 나오며 그 경로가 어딘지를 어떻게 알아내느냐이다. &lt;/p&gt;</summary></entry></feed>
