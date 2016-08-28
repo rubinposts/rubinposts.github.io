@@ -44,7 +44,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;명령으로 일단 펠리칸 생성기 설치는 끝났습니다. &lt;/p&gt;</summary></entry><entry><title>Octopress테마 설치하기</title><link href="https://rubinposts.github.io/octopresstema-seolcihagi.html" rel="alternate"></link><published>2016-08-15T12:30:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2016-08-15:octopresstema-seolcihagi.html</id><summary type="html">&lt;p&gt;막상 펠리칸으로 블로그를 설치하고 봤는데 펠리칸으로 블로그를 구축한 점은 매우 감격스러웠으나 이 테마는 사용을 못할거 같았다.. 테마를 변경할 방법이 있나 알아본결과 펠리칸이 상당히 많은 수의 테마를 보유하고 있음을 알수 있었다!&lt;/p&gt;
+&lt;p&gt;명령으로 일단 펠리칸 생성기 설치는 끝났습니다. &lt;/p&gt;</summary><category term="pelican"></category><category term="installation"></category></entry><entry><title>Octopress테마 설치하기</title><link href="https://rubinposts.github.io/octopresstema-seolcihagi.html" rel="alternate"></link><published>2016-08-15T12:30:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2016-08-15:octopresstema-seolcihagi.html</id><summary type="html">&lt;p&gt;막상 펠리칸으로 블로그를 설치하고 봤는데 펠리칸으로 블로그를 구축한 점은 매우 감격스러웠으나 이 테마는 사용을 못할거 같았다.. 테마를 변경할 방법이 있나 알아본결과 펠리칸이 상당히 많은 수의 테마를 보유하고 있음을 알수 있었다!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/getpelican/pelican-themes"&gt;Pelican Theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
