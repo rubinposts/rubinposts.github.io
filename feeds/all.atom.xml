@@ -2,6 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/all.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2017-05-07T13:09:00+09:00</updated><entry><title>Display</title><link href="https://rubinposts.github.io/display.html" rel="alternate"></link><published>2017-05-07T13:09:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-05-07:display.html</id><summary type="html">&lt;h3&gt;Display&lt;/h3&gt;
 &lt;p&gt;display는 Block, Inline, None으로 구성됩니다.&lt;/p&gt;
 &lt;h4&gt;Block&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: block&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 블록 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: block&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 블록 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div style="display: block"&gt;
 현재 블록 안입니다.
 &lt;/div&gt;
@@ -11,16 +20,40 @@
 &lt;/div&gt;
 
 &lt;h4&gt;Inline&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: inline&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 인라인 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: inline&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 인라인 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div style="display: inline"&gt;
-인라인
+현재 인라인 안입니다.
 &lt;/div&gt;
 
 &lt;div style="display: inline"&gt;
-인라인
+현재 인라인 안입니다.
 &lt;/div&gt;
 
 &lt;h4&gt;None&lt;/h4&gt;
-&lt;p&gt;논&lt;/p&gt;</summary></entry><entry><title>Stress by my company</title><link href="https://rubinposts.github.io/stress-by-my-company.html" rel="alternate"></link><published>2016-08-28T21:10:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2016-08-28:stress-by-my-company.html</id><summary type="html">&lt;h3&gt;회사는 전쟁터&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: none&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 논 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: none&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 논 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div style="display: none"&gt;
+현재 논 안입니다.
+&lt;/div&gt;
+
+&lt;div style="display: none"&gt;
+현재 논 안입니다.
+&lt;/div&gt;</summary></entry><entry><title>Stress by my company</title><link href="https://rubinposts.github.io/stress-by-my-company.html" rel="alternate"></link><published>2016-08-28T21:10:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2016-08-28:stress-by-my-company.html</id><summary type="html">&lt;h3&gt;회사는 전쟁터&lt;/h3&gt;
 &lt;p&gt;사람과 사람이 모여있는 곳은 사람 구성원에 따라 달라지긴 하나 대부분 전쟁터이다. 회사는 회사 자체가 외부에서 생존경쟁을 해야 하지만 내분에서는 직원끼리 회사내에서의 생존 경쟁을 해야 한다. 그런 곳에서 스트레스는 발생하기 마련이다.&lt;/p&gt;
 &lt;h3&gt;스트레스&lt;/h3&gt;
 &lt;p&gt;아무리 좋은 회사라도 스트레스는 피할 수 없을지 모른다. 사람은 항상 실수를 하게 마련이고 또한 완벽하지 않기 때문에 다른 사람과의 관계에서 스트레스가 오지 않는다는 것은 사실 말이 안되는 것이다. 하지만 스트레스를 줄이는 방법은 있을 것이다. 
