@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/all.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2017-05-07T13:09:00+09:00</updated><entry><title>Display</title><link href="https://rubinposts.github.io/display.html" rel="alternate"></link><published>2017-05-07T13:09:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-05-07:display.html</id><summary type="html">&lt;h3&gt;Display&lt;/h3&gt;
-&lt;p&gt;display는 Block, Inline, None으로 구성됩니다.&lt;/p&gt;
+&lt;p&gt;display는 Block, Inline, Inline-Block, None으로 구성됩니다.&lt;/p&gt;
 &lt;h4&gt;Block&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: block&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 현재 블록 안입니다.
@@ -35,6 +35,24 @@
 
 &lt;div style="display: inline"&gt;
 현재 인라인 안입니다.
+&lt;/div&gt;
+
+&lt;h4&gt;Inline-Block&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: inline-block&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 인라인블록 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display: inline-block&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+현재 인라인블록 안입니다.
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div style="display: inline-block"&gt;
+현재 인라인블록 안입니다.
+&lt;/div&gt;
+
+&lt;div style="display: inline-block"&gt;
+현재 인라인블록 안입니다.
 &lt;/div&gt;
 
 &lt;h4&gt;None&lt;/h4&gt;
