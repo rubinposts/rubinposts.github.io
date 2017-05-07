@@ -6,7 +6,18 @@
 현재 블록 안입니다.
 &lt;/div&gt;
 
+&lt;div style="display: block"&gt;
+현재 블록 안입니다.
+&lt;/div&gt;
+
 &lt;h4&gt;Inline&lt;/h4&gt;
-&lt;p&gt;인라인&lt;/p&gt;
+&lt;div style="display: inline"&gt;
+인라인
+&lt;/div&gt;
+
+&lt;div style="display: inline"&gt;
+인라인
+&lt;/div&gt;
+
 &lt;h4&gt;None&lt;/h4&gt;
 &lt;p&gt;논&lt;/p&gt;</summary></entry></feed>
