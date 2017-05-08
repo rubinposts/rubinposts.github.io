@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/android.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2017-05-08T19:08:00+09:00</updated><entry><title>RxJava</title><link href="https://rubinposts.github.io/rxjava.html" rel="alternate"></link><published>2017-05-08T19:08:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-05-08:rxjava.html</id><summary type="html">&lt;p&gt;요새 RxJava가 너무 핫한지라 나중에 이것을 Android에 사용하게 될 지는 모르겠지만 배워두는 것도 나쁘지 않겠다 싶어서 관심을 가져본다.
 일단 ReactiveX 홈페이지에 가니 지원 목록이 ㄷㄷ하다. 그냥 모든 언어를 지원한다고 보면 될 것 같다.&lt;/p&gt;
-&lt;p&gt;[ReactiveX 지원 언어 및 프레임워크][http://reactivex.io/languages.html]&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://reactivex.io/languages.html"&gt;ReactiveX 지원 언어 및 프레임워크&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;ReativeX란&lt;/h3&gt;
 &lt;p&gt;ReactiveX는 Observable 시퀀스를 사용하여 비동기 및 이벤트 기반 프로그램들을 작성하는 라이브러리라 한다.
 그리고 동기와 비동기, 싱글과 멀티에 따라 나뉜다.&lt;/p&gt;
 &lt;table class="table table-striped"&gt;
  &lt;thead&gt;
-  &lt;tr&gt;&lt;th colspan="3"&gt;Observables fill the gap by being the ideal way to access asynchronous sequences of multiple items&lt;/th&gt;&lt;/tr&gt;
  &lt;/thead&gt;&lt;tbody&gt;
   &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;single items&lt;/th&gt;&lt;th&gt;multiple items&lt;/th&gt;&lt;/tr&gt;
   &lt;tr&gt;&lt;th&gt;synchronous&lt;/th&gt;&lt;td&gt;&lt;code&gt;T getData()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;Iterable&amp;lt;T&amp;gt; getData()&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
   &lt;tr&gt;&lt;th&gt;asynchronous&lt;/th&gt;&lt;td&gt;&lt;code&gt;Future&amp;lt;T&amp;gt; getData()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;Observable&amp;lt;T&amp;gt; getData()&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
  &lt;/tbody&gt;
-&lt;/table&gt;</summary></entry></feed>
+&lt;/table&gt;
+
+&lt;p&gt;Observables는 비동기 처리에 대한 광대한 코드를 줄여주며 어떤 유스케이스에서도 사용될 수 있는 단일 추상이라 한다.&lt;/p&gt;
+&lt;table class="table table-striped"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;&lt;th&gt;event&lt;/th&gt;&lt;th&gt;Iterable (pull)&lt;/th&gt;&lt;th&gt;Observable (push)&lt;/th&gt;&lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;&lt;td&gt;retrieve data&lt;/td&gt;&lt;td&gt;&lt;code&gt;T next()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;onNext(T)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;discover error&lt;/td&gt;&lt;td&gt;throws &lt;code&gt;Exception&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;onError(Exception)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;complete&lt;/td&gt;&lt;td&gt;&lt;code&gt;!hasNext()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;onCompleted()&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;/tbody&gt;&lt;tbody&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary></entry></feed>
