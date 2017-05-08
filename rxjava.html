@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>  Stress
+    <title>  RxJava
  | Rubin</title>
 
     <meta name="author" content="Rubin"/>
@@ -29,6 +29,7 @@
 
     <!-- Feeds -->
       <link href="https://rubinposts.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Rubin - All posts - Atom Feed"/>
+      <link href="https://rubinposts.github.io/feeds/android.atom.xml" type="application/atom+xml" rel="alternate" title="Rubin - Category: Android - Atom Feed"/>
 
 
   </head>
@@ -61,6 +62,9 @@
 <li >
                   <a href="https://rubinposts.github.io/category/algorithm.html">Algorithm</a>
                 </li>
+<li  class="active" >
+                  <a href="https://rubinposts.github.io/category/android.html">Android <span class="sr-only">(current)</span></a>
+                </li>
 <li >
                   <a href="https://rubinposts.github.io/category/challenge.html">Challenge</a>
                 </li>
@@ -91,9 +95,9 @@
 
 
       <div class="row">
-        <div class=" col-md-12  ">
+        <div class=" col-md-9  ">
   <h1>
-    <a  href="https://rubinposts.github.io/tag/stress.html" rel="bookmark" title="Permalink to Stress articles">Stress articles</a>
+    <a href="https://rubinposts.github.io/rxjava.html" rel="bookmark" title="Permalink to RxJava">RxJava</a>
   </h1>
         </div>
       </div>
@@ -101,13 +105,63 @@
       <div class="row">
 
 
-        <div class=" col-md-12 " id="content" role="main">
-  <dl class="dl-horizontal">
-      <dt><abbr class="published" title="2016-08-28T21:10:00+09:00">일 28 8월 2016</abbr></dt>
-      <dd><a href="https://rubinposts.github.io/stress-by-my-company.html">Stress by my company</a></dd>
-  </dl>
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <p>요새 RxJava가 너무 핫한지라 나중에 이것을 Android에 사용하게 될 지는 모르겠지만 배워두는 것도 나쁘지 않겠다 싶어서 관심을 가져본다.
+일단 ReactiveX 홈페이지에 가니 지원 목록이 ㄷㄷ하다. 그냥 모든 언어를 지원한다고 보면 될 것 같다.</p>
+<p>[ReactiveX 지원 언어 및 프레임워크][http://reactivex.io/languages.html]</p>
+<tbody>
+  <tr><th></th><th>single items</th><th>multiple items</th></tr>
+  <tr><th>synchronous</th><td><code>T getData()</code></td><td><code>Iterable&lt;T&gt; getData()</code></td></tr>
+  <tr><th>asynchronous</th><td><code>Future&lt;T&gt; getData()</code></td><td><code>Observable&lt;T&gt; getData()</code></td></tr>
+ </tbody>
+  </div>
+
+
+    <div class="comments">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'rubinposts-github-io';
+        var disqus_identifier = "rxjava.html";
+        var disqus_title = "RxJava";
+        var disqus_url = "https://rubinposts.github.io/rxjava.html";
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus</a>.</noscript>
+    </div>
+
         </div>
 
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2017-05-08T19:08:00+09:00"><i class="fa fa-calendar"></i> 월 08 5월 2017</abbr></p>
+
+      <p><address>
+        <i class="fa fa-user"></i> By
+          <a href="https://rubinposts.github.io/author/rubin.html" rel="author">Rubin</a>
+      </address></p>
+
+    <hr/>
+
+      <p>
+              <a href="https://rubinposts.github.io/category/android.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="1 article in this category">Android</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
 
       </div>
 
@@ -161,7 +215,7 @@
 
           <div class="col-md-2 text-muted">
             <h5>Copyright notice</h5>
-            <p>© Copyright 2016 Rubin.</p>
+            <p>© Copyright 2015-2017 Rubin.</p>
           </div>
 
           <div class="col-md-2 text-muted">
@@ -173,6 +227,7 @@
               <h5>Feeds</h5>
               <ul class="list-unstyled">
                   <li><small><a href="https://rubinposts.github.io/feeds/all.atom.xml"><i class="fa fa-rss"></i> All posts (Atom)</a></small></li>
+                  <li><small><a href="https://rubinposts.github.io/feeds/android.atom.xml"><i class="fa fa-rss"></i> Category: Android (Atom)</a></small></li>
               </ul>
           </div>
 
