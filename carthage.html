@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>  첫 펠리칸 블로그
+    <title>  Carthage
  | Rubin</title>
 
     <meta name="author" content="Rubin"/>
@@ -29,7 +29,7 @@
 
     <!-- Feeds -->
       <link href="https://rubinposts.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Rubin - All posts - Atom Feed"/>
-      <link href="https://rubinposts.github.io/feeds/life.atom.xml" type="application/atom+xml" rel="alternate" title="Rubin - Category: Life - Atom Feed"/>
+      <link href="https://rubinposts.github.io/feeds/swift.atom.xml" type="application/atom+xml" rel="alternate" title="Rubin - Category: Swift - Atom Feed"/>
 
 
   </head>
@@ -71,8 +71,8 @@
 <li >
                   <a href="https://rubinposts.github.io/category/css.html">CSS</a>
                 </li>
-<li  class="active" >
-                  <a href="https://rubinposts.github.io/category/life.html">Life <span class="sr-only">(current)</span></a>
+<li >
+                  <a href="https://rubinposts.github.io/category/life.html">Life</a>
                 </li>
 <li >
                   <a href="https://rubinposts.github.io/category/pelican.html">Pelican</a>
@@ -80,8 +80,8 @@
 <li >
                   <a href="https://rubinposts.github.io/category/philosophy.html">Philosophy</a>
                 </li>
-<li >
-                  <a href="https://rubinposts.github.io/category/swift.html">Swift</a>
+<li  class="active" >
+                  <a href="https://rubinposts.github.io/category/swift.html">Swift <span class="sr-only">(current)</span></a>
                 </li>
           </ul>
 
@@ -100,7 +100,7 @@
       <div class="row">
         <div class=" col-md-9  ">
   <h1>
-    <a href="https://rubinposts.github.io/ceos-pelrikan-beulrogeu.html" rel="bookmark" title="Permalink to 첫 펠리칸 블로그">첫 펠리칸 블로그</a>
+    <a href="https://rubinposts.github.io/carthage.html" rel="bookmark" title="Permalink to Carthage">Carthage</a>
   </h1>
         </div>
       </div>
@@ -112,10 +112,51 @@
   
 
   <div>
-    <h3>Github</h3>
-<p>짓헙에서 여러번 블로그를 만들 시도를 했었다. 직접 만들었지만 디자인도 맘에 안들고 너무 손이 들어갔다. 지킬로 바꾸려 했지만 나와 친숙하지 않은 루비는 자꾸 에러를 뱉어냈다. 최근 회사의 프로젝트가 파이썬으로 가닥이 잡힐때에 파이썬 공부를 해보자 싶어서 조사해봤던 펠리칸으로 이렇게 블로그를 개설할지는 미처 몰랐지만 지금 보니 썩 마음에 든다.</p>
-<h3>Pelican</h3>
-<p>펠리칸은 파이썬을 기반으로 만들어진 Blog-Generator이다. 이거 하려는 덕분에 파이썬 가상환경 및 몇가지에 좀 친숙해졌다. 여러번의 시행착오가 있었고 조금 좌절도 했지만 이렇게 블로그를 개장하게 되었다.(눙물) 게다가 나중에 안 사실이지만 디자인도 변경할 수 있었다! 디자인도 바꾸고 나니 너무 마음에 든다. 글을 진득하게 쓰는 성격도 아니고 블로그를 진득하게 운영해본 경험도 없어서 걱정이지만 나의 생각과 느낌, 그리고 프로그래밍 적으로 정리할 것들을 적어보고자 한다.</p>
+    <p>Swift에 Library를 설치하는 방법은 몇가지가 있지만 살짝 불편하더라도 심플하고 유연성있는 것을 추구하는 나에게 Carthage가 매력적으로 다가왔다.
+Carthage의 장점은 Compile시간의 축소를 들 수 있고 단점은 라이브러리 추가시 설정이 필요하다는 부분과 이행파일을 볼 수 없다는 점이다.
+또한 Carthage는 iOS8이상을 대상으로 하기 때문에 그 이하 버전을 고려하는 프로젝트에서는 제고해 봐야 한다.</p>
+<h3>설치 방법</h3>
+<p>Homebrew를 추천하므로 homebrew방식만 적는다.</p>
+<div class="highlight"><pre><span></span>brew update
+brew install carthage
+</pre></div>
+
+
+<p>Project Root폹더에 Cartfile을 생성한다.
+그리고 그 안에 자신이 원하는 프로젝트를 작성한다. 예를들어,</p>
+<div class="highlight"><pre><span></span>github <span class="s2">&quot;Alamofire/Alamofire&quot;</span> ~&gt; 4.4
+</pre></div>
+
+
+<p>어떻게 작성해야 되는지는 해당 프로젝트에서 Carthage를 지원한다면 잘 나와있을 것이다.
+버전옆의 화살표의 의미는
+<strong>==2.0</strong> - 2.0버전
+<strong>&gt;=2.0</strong> - 2.0버전보다 큰 버전
+<strong>~&gt;2.0</strong> - 2.0버전과 호환되는 버전
+이고</p>
+<p>작성 후에는 carthage를 업데이트를 합니다.</p>
+<div class="highlight"><pre><span></span>carthage update
+</pre></div>
+
+
+<p>iOS, tvOS, watchOS등 다양한 플랫폼을 지원하는 라이브러리도 있는데 플랫폼을 한정하고 싶다면 다음과 같이 할 수 있습니다.</p>
+<div class="highlight"><pre><span></span>carthage update --platform iOS
+</pre></div>
+
+
+<h3>프레임워크 연결</h3>
+<p>이제 설치한 라이브러리 프레임워크를 Xcode에 연결해주는 작업이 필요합니다.</p>
+<ul>
+<li>Project -&gt; BuildPhase를 이동하여 왼쪽 위에 +를 눌러 새로운 Run Script를 생성합니다.</li>
+<li>그 안에서 Shell아래의 script창에 /usr/local/bin/carthage copy-frameworks를 입력합니다.</li>
+<li>다음 Input Files에 +를 하여 $(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework를 추가해줍니다.</li>
+</ul>
+<p>여기까지 하면 컴파일은 잘 됩니다.
+하지만 소스에서 import에서 사용하기 위해 General에서 프레임워크 등록이 필요합니다.</p>
+<ul>
+<li>General -&gt; Linked Frameworks and Libraries로 가서 +로 프레임워크를 추가합니다.</li>
+</ul>
+<p>이를 마치면 이제 Library를 사용할 수 있습니다.</p>
   </div>
 
 
@@ -123,9 +164,9 @@
       <div id="disqus_thread"></div>
       <script type="text/javascript">
         var disqus_shortname = 'rubinposts-github-io';
-        var disqus_identifier = "ceos-pelrikan-beulrogeu.html";
-        var disqus_title = "첫 펠리칸 블로그";
-        var disqus_url = "https://rubinposts.github.io/ceos-pelrikan-beulrogeu.html";
+        var disqus_identifier = "carthage.html";
+        var disqus_title = "Carthage";
+        var disqus_url = "https://rubinposts.github.io/carthage.html";
         (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
@@ -140,7 +181,7 @@
           <div class="col-md-3">
   <div class="well">
 
-    <p><abbr title="2016-08-14T11:30:00+09:00"><i class="fa fa-calendar"></i> 일 14 8월 2016</abbr></p>
+    <p><abbr title="2017-05-11T13:00:00+09:00"><i class="fa fa-calendar"></i> 목 11 5월 2017</abbr></p>
 
       <p><address>
         <i class="fa fa-user"></i> By
@@ -150,9 +191,9 @@
     <hr/>
 
       <p>
-              <a href="https://rubinposts.github.io/category/life.html" rel="tag"
+              <a href="https://rubinposts.github.io/category/swift.html" rel="tag"
                   data-toggle="tooltip" class="label label-info"
-                  title="1 article in this category">Life</a>
+                  title="1 article in this category">Swift</a>
       </p>
       <hr/>
 
@@ -226,7 +267,7 @@
               <h5>Feeds</h5>
               <ul class="list-unstyled">
                   <li><small><a href="https://rubinposts.github.io/feeds/all.atom.xml"><i class="fa fa-rss"></i> All posts (Atom)</a></small></li>
-                  <li><small><a href="https://rubinposts.github.io/feeds/life.atom.xml"><i class="fa fa-rss"></i> Category: Life (Atom)</a></small></li>
+                  <li><small><a href="https://rubinposts.github.io/feeds/swift.atom.xml"><i class="fa fa-rss"></i> Category: Swift (Atom)</a></small></li>
               </ul>
           </div>
 
