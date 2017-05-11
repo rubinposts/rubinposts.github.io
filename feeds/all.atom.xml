@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/all.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2017-05-11T13:00:00+09:00</updated><entry><title>Carthage</title><link href="https://rubinposts.github.io/carthage.html" rel="alternate"></link><published>2017-05-11T13:00:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-05-11:carthage.html</id><summary type="html">&lt;p&gt;Swift에 Library를 설치하는 방법은 몇가지가 있지만 살짝 불편하더라도 심플하고 유연성있는 것을 추구하는 나에게 Carthage가 매력적으로 다가왔다.
 Carthage의 장점은 Compile시간의 축소를 들 수 있고 단점은 라이브러리 추가시 설정이 필요하다는 부분과 이행파일을 볼 수 없다는 점이다.
 또한 Carthage는 iOS8이상을 대상으로 하기 때문에 그 이하 버전을 고려하는 프로젝트에서는 제고해 봐야 한다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;설치 방법&lt;/h3&gt;
 &lt;p&gt;Homebrew를 추천하므로 homebrew방식만 적는다.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;brew update
@@ -10,21 +10,23 @@ brew install carthage
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br&gt;
 Project Root폹더에 Cartfile을 생성한다.
 그리고 그 안에 자신이 원하는 프로젝트를 작성한다. 예를들어,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;github &lt;span class="s2"&gt;&amp;quot;Alamofire/Alamofire&amp;quot;&lt;/span&gt; ~&amp;gt; 4.4
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br&gt;
 어떻게 작성해야 되는지는 해당 프로젝트에서 Carthage를 지원한다면 잘 나와있을 것이다.
-버전옆의 화살표의 의미는
-&lt;em&gt; &lt;strong&gt;==2.0&lt;/strong&gt; - 2.0버전
-&lt;/em&gt; &lt;strong&gt;&amp;gt;=2.0&lt;/strong&gt; - 2.0버전보다 큰 버전
-* &lt;strong&gt;~&amp;gt;2.0&lt;/strong&gt; - 2.0버전과 호환되는 버전
-이고&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;
+버전옆의 화살표의 의미는&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;==2.0&lt;/strong&gt; - 2.0버전&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;gt;=2.0&lt;/strong&gt; - 2.0버전보다 큰 버전&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~&amp;gt;2.0&lt;/strong&gt; - 2.0버전과 호환되는 버전&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이고&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
 작성 후에는 carthage를 업데이트를 합니다.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;carthage update
 &lt;/pre&gt;&lt;/div&gt;
@@ -35,19 +37,23 @@ Project Root폹더에 Cartfile을 생성한다.
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;프레임워크 연결&lt;/h3&gt;
-&lt;p&gt;이제 설치한 라이브러리 프레임워크를 Xcode에 연결해주는 작업이 필요합니다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;
-+ Project -&amp;gt; BuildPhase를 이동하여 왼쪽 위에 +를 눌러 새로운 Run Script를 생성합니다.
-+ 그 안에서 Shell아래의 script창에 /usr/local/bin/carthage copy-frameworks를 입력합니다.
-+ 다음 Input Files에 +를 하여 $(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework를 추가해줍니다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;
-여기까지 하면 컴파일은 잘 됩니다.
-하지만 소스에서 import에서 사용하기 위해 General에서 프레임워크 등록이 필요합니다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;
-+ General -&amp;gt; Linked Frameworks and Libraries로 가서 +로 프레임워크를 추가합니다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;
+&lt;p&gt;이제 설치한 라이브러리 프레임워크를 Xcode에 연결해주는 작업이 필요합니다.
+&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Project -&amp;gt; BuildPhase를 이동하여 왼쪽 위에 +를 눌러 새로운 Run Script를 생성합니다.&lt;/li&gt;
+&lt;li&gt;그 안에서 Shell아래의 script창에 /usr/local/bin/carthage copy-frameworks를 입력합니다.&lt;/li&gt;
+&lt;li&gt;다음 Input Files에 +를 하여 $(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework를 추가해줍니다.
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;여기까지 하면 컴파일은 잘 됩니다.
+하지만 소스에서 import에서 사용하기 위해 General에서 프레임워크 등록이 필요합니다.
+&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General -&amp;gt; Linked Frameworks and Libraries로 가서 +로 프레임워크를 추가합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;
 이를 마치면 이제 Library를 사용할 수 있습니다.&lt;/p&gt;</summary></entry><entry><title>RxJava</title><link href="https://rubinposts.github.io/rxjava.html" rel="alternate"></link><published>2017-05-08T19:08:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-05-08:rxjava.html</id><summary type="html">&lt;p&gt;요새 RxJava가 너무 핫한지라 나중에 이것을 Android에 사용하게 될 지는 모르겠지만 배워두는 것도 나쁘지 않겠다 싶어서 관심을 가져본다.
 일단 ReactiveX 홈페이지에 가니 지원 목록이 ㄷㄷ하다. 그냥 모든 언어를 지원한다고 보면 될 것 같다.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://reactivex.io/languages.html"&gt;ReactiveX 지원 언어 및 프레임워크&lt;/a&gt;&lt;/p&gt;
