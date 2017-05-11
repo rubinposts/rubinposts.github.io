@@ -20,9 +20,9 @@ Project Root폹더에 Cartfile을 생성한다.
 &lt;p&gt;&lt;br /&gt;
 어떻게 작성해야 되는지는 해당 프로젝트에서 Carthage를 지원한다면 잘 나와있을 것이다.
 버전옆의 화살표의 의미는
-- &lt;strong&gt;==2.0&lt;/strong&gt; - 2.0버전
-- &lt;strong&gt;&amp;gt;=2.0&lt;/strong&gt; - 2.0버전보다 큰 버전
-- &lt;strong&gt;~&amp;gt;2.0&lt;/strong&gt; - 2.0버전과 호환되는 버전
+&lt;em&gt; &lt;strong&gt;==2.0&lt;/strong&gt; - 2.0버전
+&lt;/em&gt; &lt;strong&gt;&amp;gt;=2.0&lt;/strong&gt; - 2.0버전보다 큰 버전
+* &lt;strong&gt;~&amp;gt;2.0&lt;/strong&gt; - 2.0버전과 호환되는 버전
 이고&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 작성 후에는 carthage를 업데이트를 합니다.&lt;/p&gt;
@@ -39,13 +39,13 @@ Project Root폹더에 Cartfile을 생성한다.
 &lt;h3&gt;프레임워크 연결&lt;/h3&gt;
 &lt;p&gt;이제 설치한 라이브러리 프레임워크를 Xcode에 연결해주는 작업이 필요합니다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
-&lt;em&gt; Project -&amp;gt; BuildPhase를 이동하여 왼쪽 위에 +를 눌러 새로운 Run Script를 생성합니다.
-&lt;/em&gt; 그 안에서 Shell아래의 script창에 /usr/local/bin/carthage copy-frameworks를 입력합니다.
-* 다음 Input Files에 +를 하여 $(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework를 추가해줍니다.&lt;/p&gt;
++ Project -&amp;gt; BuildPhase를 이동하여 왼쪽 위에 +를 눌러 새로운 Run Script를 생성합니다.
++ 그 안에서 Shell아래의 script창에 /usr/local/bin/carthage copy-frameworks를 입력합니다.
++ 다음 Input Files에 +를 하여 $(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework를 추가해줍니다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 여기까지 하면 컴파일은 잘 됩니다.
 하지만 소스에서 import에서 사용하기 위해 General에서 프레임워크 등록이 필요합니다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
-* General -&amp;gt; Linked Frameworks and Libraries로 가서 +로 프레임워크를 추가합니다.&lt;/p&gt;
++ General -&amp;gt; Linked Frameworks and Libraries로 가서 +로 프레임워크를 추가합니다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 이를 마치면 이제 Library를 사용할 수 있습니다.&lt;/p&gt;</summary></entry></feed>
