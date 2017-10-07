@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/all.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2017-10-07T08:20:00+09:00</updated><entry><title>Layout</title><link href="https://rubinposts.github.io/layout.html" rel="alternate"></link><published>2017-10-07T08:20:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-10-07:layout.html</id><summary type="html">&lt;h3&gt;UIView LifeCycle&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="LifeCycle" src="https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Art/object_life_cycle_2x.png" /&gt;
-1. initWithCoder:
-     layerClass
-     setNeedsDisplay
-     addConstraints:
-          addConstraint: (can happen multiple times)
-2. willMoveToSuperview:
-3. invalidateIntrinsicContentSize
-4. didMoveToSuperview
-5. awakeFromNib
-6. willMoveToWindow:
-7. needsUpdateConstraints
-8. didMoveToWindow
-9. setNeedsLayout
-10. updateConstraints
-      intrinsicContentSize
-11. layoutSubviews (can happen multiple times)
-12. drawRect:&lt;/p&gt;
+1. initWithCoder: &lt;br&gt;
+     layerClass &lt;br&gt;
+     setNeedsDisplay &lt;br&gt;
+     addConstraints: &lt;br&gt;
+          addConstraint: (can happen multiple times) &lt;br&gt;
+2. willMoveToSuperview: &lt;br&gt;
+3. invalidateIntrinsicContentSize &lt;br&gt;
+4. didMoveToSuperview &lt;br&gt;
+5. awakeFromNib &lt;br&gt;
+6. willMoveToWindow: &lt;br&gt;
+7. needsUpdateConstraints &lt;br&gt;
+8. didMoveToWindow &lt;br&gt;
+9. setNeedsLayout &lt;br&gt;
+10. updateConstraints &lt;br&gt;
+      intrinsicContentSize &lt;br&gt;
+11. layoutSubviews (can happen multiple times) &lt;br&gt;
+12. drawRect: &lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;Animate&lt;/h3&gt;
 &lt;h5&gt;Color Animation&lt;/h5&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="bp"&gt;UIView&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;animate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;withDuration&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;animations&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
