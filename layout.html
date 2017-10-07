@@ -113,9 +113,58 @@
 
   <div>
     <h3>UIView LifeCycle</h3>
-<p><img alt="LifeCycle" src="https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Art/object_life_cycle_2x.png" /></p>
+<p><img alt="LifeCycle" src="https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Art/object_life_cycle_2x.png" />
+1. initWithCoder:
+     layerClass
+     setNeedsDisplay
+     addConstraints:
+          addConstraint: (can happen multiple times)
+2. willMoveToSuperview:
+3. invalidateIntrinsicContentSize
+4. didMoveToSuperview
+5. awakeFromNib
+6. willMoveToWindow:
+7. needsUpdateConstraints
+8. didMoveToWindow
+9. setNeedsLayout
+10. updateConstraints
+      intrinsicContentSize
+11. layoutSubviews (can happen multiple times)
+12. drawRect:</p>
 <h3>Animate</h3>
-<p>UIView.animate()</p>
+<h5>Color Animation</h5>
+<div class="highlight"><pre><span></span><span class="bp">UIView</span><span class="p">.</span><span class="n">animate</span><span class="p">(</span><span class="n">withDuration</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">animations</span><span class="p">:</span> <span class="p">{</span> 
+    <span class="kc">self</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="p">=</span> <span class="p">.</span><span class="n">brown</span>
+<span class="p">},</span> <span class="n">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</pre></div>
+
+
+<h5>Size Animation</h5>
+<div class="highlight"><pre><span></span><span class="bp">UIView</span><span class="p">.</span><span class="n">animate</span><span class="p">(</span><span class="n">withDuration</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">animations</span><span class="p">:</span> <span class="p">{</span> 
+    <span class="kc">self</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">+=</span> <span class="mi">10</span>
+    <span class="kc">self</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span> <span class="o">+=</span> <span class="mi">10</span>
+<span class="p">},</span> <span class="n">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</pre></div>
+
+
+<h5>Move Animation</h5>
+<div class="highlight"><pre><span></span><span class="bp">UIView</span><span class="p">.</span><span class="n">animate</span><span class="p">(</span><span class="n">withDuration</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">animations</span><span class="p">:</span> <span class="p">{</span> 
+    <span class="kc">self</span><span class="p">.</span><span class="n">bonacinno</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">origin</span><span class="p">.</span><span class="n">y</span> <span class="o">-=</span> <span class="mi">20</span>
+<span class="p">},</span> <span class="n">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</pre></div>
+
+
+<h5>Repeat Animation</h5>
+<div class="highlight"><pre><span></span><span class="bp">UIView</span><span class="p">.</span><span class="n">animate</span><span class="p">(</span><span class="n">withDuration</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">animations</span><span class="p">:</span> <span class="p">{</span>
+    <span class="kc">self</span><span class="p">.</span><span class="n">bonacinno</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="p">=</span> <span class="p">.</span><span class="n">brown</span>
+    <span class="kc">self</span><span class="p">.</span><span class="n">bonacinno</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">+=</span> <span class="mi">10</span>
+    <span class="kc">self</span><span class="p">.</span><span class="n">bonacinno</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span> <span class="o">+=</span> <span class="mi">10</span>
+<span class="p">})</span> <span class="p">{</span> <span class="kc">_</span> <span class="k">in</span>
+    <span class="bp">UIView</span><span class="p">.</span><span class="n">animate</span><span class="p">(</span><span class="n">withDuration</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">delay</span><span class="p">:</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">options</span><span class="p">:</span> <span class="p">[.</span><span class="n">autoreverse</span><span class="p">,</span> <span class="p">.</span><span class="n">repeat</span><span class="p">],</span> <span class="n">animations</span><span class="p">:</span> <span class="p">{</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">bonacinno</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">origin</span><span class="p">.</span><span class="n">y</span> <span class="o">-=</span> <span class="mi">20</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+</pre></div>
   </div>
 
 

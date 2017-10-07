@@ -112,9 +112,28 @@
         <h2><a href="https://rubinposts.github.io/layout.html" rel="bookmark" title="Permalink to Layout">Layout</a></h2>
       </header>
       <div><h3>UIView LifeCycle</h3>
-<p><img alt="LifeCycle" src="https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Art/object_life_cycle_2x.png" /></p>
+<p><img alt="LifeCycle" src="https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Art/object_life_cycle_2x.png" />
+1. initWithCoder:
+     layerClass
+     setNeedsDisplay
+     addConstraints:
+          addConstraint: (can happen multiple times)
+2. willMoveToSuperview:
+3. invalidateIntrinsicContentSize
+4. didMoveToSuperview
+5. awakeFromNib
+6. willMoveToWindow:
+7. needsUpdateConstraints
+8. didMoveToWindow
+9. setNeedsLayout
+10. updateConstraints
+      intrinsicContentSize
+11. layoutSubviews (can happen multiple times)
+12. drawRect:</p>
 <h3>Animate</h3>
-<p>UIView.animate()</p></div>
+<h5>Color Animation</h5>
+<div class="highlight"><pre><span></span><span class="bp">UIView</span><span class="p">.</span><span class="n">animate</span><span class="p">(</span><span class="n">withDuration</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">animations</span><span class="p">:</span> <span class="p">{</span> 
+    <span class="kc">self</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="p">=</span> <span class="p">.</span><span class="n">brown ...</span></pre></div></div>
       <div><a class="btn btn-primary" href="https://rubinposts.github.io/layout.html"><strong>➟ Read more</strong></a></div>
     </article>
     <hr/>
