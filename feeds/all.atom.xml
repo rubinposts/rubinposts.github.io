@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rubin</title><link href="https://rubinposts.github.io/" rel="alternate"></link><link href="https://rubinposts.github.io/feeds/all.atom.xml" rel="self"></link><id>https://rubinposts.github.io/</id><updated>2017-10-07T08:20:00+09:00</updated><entry><title>Layout</title><link href="https://rubinposts.github.io/layout.html" rel="alternate"></link><published>2017-10-07T08:20:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-10-07:layout.html</id><summary type="html">&lt;h3&gt;UIView LifeCycle&lt;/h3&gt;
-&lt;p&gt;!(https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Art/object_life_cycle_2x.png)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="LifeCycle" src="https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Art/object_life_cycle_2x.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;Animate&lt;/h3&gt;
 &lt;p&gt;UIView.animate()&lt;/p&gt;</summary></entry><entry><title>Carthage</title><link href="https://rubinposts.github.io/carthage.html" rel="alternate"></link><published>2017-05-11T13:00:00+09:00</published><author><name>Rubin</name></author><id>tag:rubinposts.github.io,2017-05-11:carthage.html</id><summary type="html">&lt;p&gt;Swift에 Library를 설치하는 방법은 몇가지가 있지만 살짝 불편하더라도 심플하고 유연성있는 것을 추구하는 나에게 Carthage가 매력적으로 다가왔다.
 Carthage의 장점은 Compile시간의 축소를 들 수 있고 단점은 라이브러리 추가시 설정이 필요하다는 부분과 이행파일을 볼 수 없다는 점이다.
